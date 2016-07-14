@@ -64,6 +64,7 @@ Now that you have your repository set, you can now:
  - make changes to these files
  - ```git add [files]``` them to the staging location
  - ```git commit``` them to your repository
+  - Note: Sublime Text will open a text dialog. You can enter the text you would like for the commit there and then close the tab. That will complete the commit.
  - ```git push origin master``` those changes to your remote repository
 
 
@@ -72,5 +73,7 @@ For the homework assignment, I would like you to create a file in this repositor
 
  - What is your experience with web architecture. Have you written HTML before? Written Javascript? etc.
  - What are your favorite features from at least 2 browsers?
+
+You can use Sublime Text to edit files, which can be found by going to the Windows like button and going to Programming -> Sublime Text. You can also type "subl" on the command line. 
 
 Be sure to push your changes to the remote repository. You'll know that you've done it if you can see your changes on the GitHub page.
