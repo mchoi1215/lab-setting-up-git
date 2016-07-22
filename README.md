@@ -8,7 +8,7 @@ In this lab you will do the following:
  - Commit and push changes to your repository to submit your homework
 
 ## Accept the first lab
-Please go to the class homepage and click on the first lab link and accept the assignment. This will create a repository with the first lab assignment that you will have access to.
+Please go to the [class homepage](https://github.com/INFO253-FL2016/INFO253-FL2016.github.io) and click on the first lab link and accept the assignment. This will create a repository with the first lab assignment that you will have access to.
 
 ## Learn to use the LXTerminal on your Virtual Machine
 For this first lab you will need to open your Virtual Machine and use the Terminal for the first time. You can reach the terminal by pressing on the Windows like button on the bottom left hand corner of the screen and go to System Tools -> LXTerminal.
@@ -63,7 +63,7 @@ Now you can run the command:
 git clone [url]
 ```
 
-Where [url] is the url that you copied from the GitHub web page. It should ask you for your username and password, and then it should download the repository!
+Where [url] is the url that you copied from the GitHub web page. It may ask you for your username and password, and then it should download the repository!
 
 ## Commit and push changes to your repository to submit your homework
 
