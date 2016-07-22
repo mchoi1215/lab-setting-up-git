@@ -2,14 +2,13 @@
 Introduction to Git and exploration of browsers
 
 In this lab you will do the following:
- - Create a GitHub Account
+ - Accept the first lab
  - Learn to use the LXTerminal on your Virtual Machine
  - Use Git to clone a repository
  - Commit and push changes to your repository to submit your homework
 
-## Create a GitHub Account
-You should have received a link that will create a repository for this lab assignment to your account. Click on this link: if you already have a GitHub account you can sign in here, or if you don't have one you can create one now.
-
+## Accept the first lab
+Please go to the class homepage and click on the first lab link and accept the assignment. This will create a repository with the first lab assignment that you will have access to.
 
 ## Learn to use the LXTerminal on your Virtual Machine
 For this first lab you will need to open your Virtual Machine and use the Terminal for the first time. You can reach the terminal by pressing on the Windows like button on the bottom left hand corner of the screen and go to System Tools -> LXTerminal.
@@ -45,8 +44,16 @@ Now we want to use git to clone the repository we created earlier and finish thi
 
 ```
 git config --global user.email "[your email]"
-git config --global user.name "[kayashaolu]"
+git config --global user.name "[your github username]"
 ```
+
+And then lets take the time to set other time saving configurations:
+```
+git config --global core.editor pico 
+git config --global credential.helper "cache --timeout=3600"
+```
+
+The first line sets the editor that you'll be editing git commits to pico, a much simpler terminal text editor than the default vim. The second line will save your credentials for a limited time so that you will not have to enter it over and over again.
 
 Next lets clone this repository. You need to log into your GitHub account, click on the INFO253-FL2016/lab-1-[your username] repository, and then find the green "Clone and Download" button. Copy that url that it shows you.
 
@@ -56,7 +63,7 @@ Now you can run the command:
 git clone [url]
 ```
 
-Where [url] is the url that you copied from the GitHub webpage. It should ask you for your username and password, and then it should download the repository!
+Where [url] is the url that you copied from the GitHub web page. It should ask you for your username and password, and then it should download the repository!
 
 ## Commit and push changes to your repository to submit your homework
 
@@ -64,14 +71,13 @@ Now that you have your repository set, you can now:
  - make changes to these files
  - ```git add [files]``` them to the staging location
  - ```git commit``` them to your repository
-  - Note: Sublime Text will open a text dialog. You can enter the text you would like for the commit there and then close the tab. That will complete the commit.
  - ```git push origin master``` those changes to your remote repository
 
 
 ## Homework Assignment
-For the homework assignment, I would like you to create a file in this repository called "browsers.txt" right next to the "readme.md" file and in the text file answer the following questions:
+For the homework assignment, I would like for you to create a file in this repository called "browsers.txt" right next to the "README.MD" file and in the text file answer the following questions:
 
- - What is your experience with web architecture. Have you written HTML before? Written Javascript? etc.
+ - What is your experience with web architecture. Have you written HTML before? Written JavaScript? etc.
  - What are your favorite features from at least 2 browsers?
 
 You can use Sublime Text to edit files, which can be found by going to the Windows like button and going to Programming -> Sublime Text. You can also type "subl" on the command line. 
