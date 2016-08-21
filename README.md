@@ -1,14 +1,10 @@
 # Lab 1: What is Git?
 Introduction to Git and exploration of browsers
 
-In this lab you will do the following:
- - Accept the first lab
+## In this lab you will accomplish the following:
  - Learn to use the LXTerminal on your Virtual Machine
  - Use Git to clone a repository
  - Commit and push changes to your repository to submit your homework
-
-## Accept the first lab
-Please go to the [class homepage](https://github.com/INFO253-FL2016/INFO253-FL2016.github.io) and click on the first lab link and accept the assignment. This will create a repository with the first lab assignment that you will have access to.
 
 ## Learn to use the LXTerminal on your Virtual Machine
 For this first lab you will need to open your Virtual Machine and use the Terminal for the first time. You can reach the terminal by pressing on the Windows like button on the bottom left hand corner of the screen and go to System Tools -> LXTerminal.
