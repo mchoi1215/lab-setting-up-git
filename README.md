@@ -2,9 +2,18 @@
 Introduction to Git and exploration of browsers
 
 ## In this lab you will accomplish the following:
+ - Complete setup of your virtual machine
  - Learn to use the LXTerminal on your Virtual Machine
  - Use Git to clone a repository
  - Commit and push changes to your repository to submit your homework
+
+## Complete setup of your virtual machine
+You should have already installed VirtualBox and have downloaded the image that you will use to create your virtual machine so lets create it!
+ - Open VirtualBox
+ - Go to File -> Import Appliance
+ - Select the image file (ova file) that you recently downloaded
+ - And now you have your own virtual machine (username: student password student)
+ - If interested you can also install the Guest additions for your host Operating System that could make daily operations easier.
 
 ## Learn to use the LXTerminal on your Virtual Machine
 For this first lab you will need to open your Virtual Machine and use the Terminal for the first time. You can reach the terminal by pressing on the Windows like button on the bottom left hand corner of the screen and go to System Tools -> LXTerminal.
@@ -36,6 +45,12 @@ And now we are in the location where we want to clone the repository we created 
 
 
 ## Use Git to clone a repository
+First we will need to install Git on our virtual machine. We can do that with the commmand inside the terminal window:
+
+```
+sudo apt install git
+```
+
 Now we want to use git to clone the repository we created earlier and finish this lab. We can do so by first telling git who we are:
 
 ```
