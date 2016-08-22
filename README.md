@@ -95,3 +95,5 @@ For the homework assignment, I would like for you to create a file in this repos
 You can use Sublime Text to edit files, which can be found by going to the Windows like button and going to Programming -> Sublime Text. You can also type "subl" on the command line. 
 
 Be sure to push your changes to the remote repository. You'll know that you've done it if you can see your changes on the GitHub page.
+
+**Then when you are done be sure to submit the homepage to your repository on our BCourses website.**
