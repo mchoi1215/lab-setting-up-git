@@ -14,7 +14,19 @@ You should have already installed VirtualBox and have downloaded the image that 
  - Go to File -> Import Appliance
  - Select the image file (ova file) that you recently downloaded
  - And now you have your own virtual machine (username: student password student)
- - If interested you can also install the [Guest additions](https://www.virtualbox.org/wiki/Downloads) for your host Operating System that could make daily operations easier.
+ - If your having issues running your Virtual Machine you can also install [Guest additions](https://www.virtualbox.org/wiki/Downloads)
+  - Double click on the download and follow the instructions
+  - Then stop and then start your VM
+  - When your VM is fully loaded, go to the Menu of VirtualBox and click on Devices -> Insert Guest Additions CD Image
+  - Go to the LXTerminal by clicking on the button at the bottom right, going to System Tools->LXTerminal
+  - Type the following and press enter:
+  	- ```sudo apt-get update && sudo apt-get upgrade```
+  	- ```sudo apt-get install dkms```
+  - Then go to the desktop, double click on VBOXADDITIONS_...
+  - Go to Tools -> Open Current Folder in Terminal
+  - Type the following and press enter
+   - ```sudo sh ./VBoxLinuxAdditions.run```
+  - Restart your Virtual Machine
 
 ## Learn to use the LXTerminal on your Virtual Machine
 For this first lab you will need to open your Virtual Machine and use the Terminal for the first time. You can reach the terminal by pressing on the Windows like button on the bottom left hand corner of the screen and go to System Tools -> LXTerminal.
