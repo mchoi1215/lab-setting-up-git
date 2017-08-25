@@ -2,60 +2,18 @@
 Introduction to Git and exploration of browsers
 
 ## In this lab you will accomplish the following:
- - Complete setup of your virtual machine
- - Learn to use the LXTerminal on your Virtual Machine
+ - Complete setup of your vagrant box
+ - Learn to use vagrant
  - Use Git to clone a repository
  - Commit and push changes to your repository to submit your homework
 
-## Complete setup of your virtual machine
-You should have already installed VirtualBox and have downloaded the image that you will use to create your virtual machine so lets create it!g
- - If you haven't already, [download and install VirtualBox](https://www.virtualbox.org/wiki/Downloads) and [the image](https://github.com/kayashaolu/webarch/releases/download/Fall-2016-VM/Lubuntu.Class.ova) we all will use for your own VM in this class.
- - Open VirtualBox
- - Go to File -> Import Appliance
- - Select the image file (ova file) that you recently downloaded
- - And now you have your own virtual machine (username: student password student)
- - If your having issues running your Virtual Machine you can also install [Guest additions](https://www.virtualbox.org/wiki/Downloads)
-  - Double click on the download and follow the instructions
-  - Then stop and then start your VM
-  - When your VM is fully loaded, go to the Menu of VirtualBox and click on Devices -> Insert Guest Additions CD Image
-  - Go to the LXTerminal by clicking on the button at the bottom right, going to System Tools->LXTerminal
-  - Type the following and press enter:
-  	- ```sudo apt-get update && sudo apt-get upgrade```
-  	- ```sudo apt-get install dkms```
-  - Then go to the desktop, double click on VBOXADDITIONS_...
-  - Go to Tools -> Open Current Folder in Terminal
-  - Type the following and press enter
-   - ```sudo sh ./VBoxLinuxAdditions.run```
-  - Restart your Virtual Machine
-
-## Learn to use the LXTerminal on your Virtual Machine
-For this first lab you will need to open your Virtual Machine and use the Terminal for the first time. You can reach the terminal by pressing on the Windows like button on the bottom left hand corner of the screen and go to System Tools -> LXTerminal.
-
-You will see the infamous black screen with white letters. You are now officially a hacker :)
-
-The black screen should display something like this:
-
-```
-student@student-VirtualBox:~$
-```
-
-That prompt is saying that your username is "student" and you are logged into the "student-VirtualBox" computer (the name of the virtual machine). You are now currently in the folder "~", which means your home folder which is:
-
-```
-/home/student/
-```
-
-
-Now we want to change directories to the Documents folder by doing the following:
-
-```
-cd Documents
-```
-
-And now we are in the location where we want to clone the repository we created by clicking on that invite link.
-
-**Please note:** You can also go to the same location using the graphical user interface by going back to the Windows like button on the bottom left hand corner of the screen and going to Accessories -> File Manager PCManFM. Then click on the Documents folder on the left hand side.
-
+## Complete setup of your vagrant box
+ - If you haven't already please download and install [Vagrant](https://www.vagrantup.com/downloads.html) and [VirtualBox](https://www.virtualbox.org/downloads.html)
+ - Open up a terminal window on Mac/Linux, a Command Prompt on Windows
+ - Type the command ```mkdir i253``` and press enter. This creates a folder called "i253"
+ - Type the command ```cd i253``` and press enter. This now changes the current directory to the newly created "i253"
+ - Type the command ```vagrant init hashicorp/precise64```. This creates a vagrant box.
+ - Type the command ```vagrant up```. This now builds the vagrant box
 
 ## Use Git to clone a repository
 First we will need to install Git on our virtual machine. We can do that with the command inside the terminal window:
