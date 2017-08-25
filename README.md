@@ -14,12 +14,13 @@ Introduction to Git and exploration of browsers
  - Type the command ```cd i253``` and press enter. This now changes the current directory to the newly created "i253"
  - Type the command ```vagrant init hashicorp/precise64```. This creates a vagrant box.
  - Type the command ```vagrant up```. This now builds the vagrant box
+ - Type the command ```vagrant ssh```. This now connects to the vagrant box
 
 ## Use Git to clone a repository
 First we will need to install Git on our virtual machine. We can do that with the command inside the terminal window:
 
 ```
-sudo apt install git
+sudo apt-get install git
 ```
 
 Now we want to use git to clone the repository we created earlier and finish this lab. We can do so by first telling git who we are:
@@ -37,7 +38,7 @@ git config --global credential.helper "cache --timeout=3600"
 
 The first line sets the editor that you'll be editing git commits to pico, a much simpler terminal text editor than the default vim. The second line will save your credentials for a limited time so that you will not have to enter it over and over again.
 
-Next lets clone this repository. You need to log into your GitHub account, click on the INFO253-FL2016/lab-1-[your username] repository, and then find the green "Clone and Download" button. Copy that url that it shows you.
+Next lets clone this repository. You need to log into your GitHub account, click on the INFO253-FL2017/lab-1-setting-up-git-[your username] repository, and then find the green "Clone and Download" button. Copy that url that it shows you.
 
 Now you can run the command:
 
