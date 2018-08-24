@@ -1,27 +1,10 @@
 # Lab 1: What is Git?
 Introduction to Git and exploration of browsers
 
-## In this lab you will accomplish the following:
- - Complete setup of your vagrant box
- - Learn to use vagrant
- - Use Git to clone a repository
- - Commit and push changes to your repository to submit your homework
-
-## Complete setup of your vagrant box
- - If you haven't already please download and install [Vagrant](https://www.vagrantup.com/downloads.html) and [VirtualBox](https://www.virtualbox.org/downloads.html)
- - Open up a terminal window on Mac/Linux, a Command Prompt on Windows
- - Type the command ```mkdir i253``` and press enter. This creates a folder called "i253"
- - Type the command ```cd i253``` and press enter. This now changes the current directory to the newly created "i253"
- - Type the command ```vagrant init hashicorp/precise64```. This creates a vagrant box.
- - Type the command ```vagrant up```. This now builds the vagrant box
- - Type the command ```vagrant ssh```. This now connects to the vagrant box
-
 ## Use Git to clone a repository
-First we will need to install Git on our virtual machine. We can do that with the command inside the terminal window:
+Please follow the [instructions here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) to install git on your operating system.
 
-```
-sudo apt-get install git
-```
+For the following instructions, for mac/linux users please open a terminal window and for windows users please use the Git Bash application that you have installed.
 
 Now we want to use git to clone the repository we created earlier and finish this lab. We can do so by first telling git who we are:
 
@@ -38,7 +21,9 @@ git config --global credential.helper "cache --timeout=3600"
 
 The first line sets the editor that you'll be editing git commits to pico, a much simpler terminal text editor than the default vim. The second line will save your credentials for a limited time so that you will not have to enter it over and over again.
 
-Next lets clone this repository. You need to log into your GitHub account, click on the INFO253-FL2017/lab-1-setting-up-git-[your username] repository, and then find the green "Clone and Download" button. Copy that url that it shows you.
+You should have gotten an email with a link to create your own repository dedicated to this lab. It should be from "GitHub Classroom". Please click on that link and have your repository for this lab created.
+
+Next lets clone this repository. You need to log into your GitHub account, navigate to the repository that , and then find the green "Clone and Download" button. Copy that url that it shows you.
 
 Now you can run the command:
 
@@ -67,4 +52,4 @@ You can use Sublime Text to edit files, which can be found by going to the Windo
 
 Be sure to push your changes to the remote repository. You'll know that you've done it if you can see your changes on the GitHub page.
 
-**Then when you are done be sure to submit the homepage to your repository on our BCourses website.**
+Once you push those files to your repository you are done!
